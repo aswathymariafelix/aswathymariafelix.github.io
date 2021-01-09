@@ -34,7 +34,7 @@ if(!(isset($_SESSION["login"]) == "OK")) {
 	</div>
 	<div class="column">
      <input type="file" name="file" class="up"><br>
-     <input type="submit" name="Upload File" value="Upload Ebook" class="upload">
+     <input type="submit" name="Upload File" value="Upload Ebook" class="upload" target="_self">
  	</div>
 </div>
 </div>
