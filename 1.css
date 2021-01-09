@@ -1,0 +1,213 @@
+* {
+	box-sizing: border-box;
+}
+
+ body{
+ 	background-image: url("Images/pika.jpg");
+
+  background-size: cover;
+ 	background-attachment: fixed;
+ 	background-position: center;
+ }
+
+ u{
+  font-size: 23px;
+ }
+
+ .margin{
+   margin-top: 200px;
+  margin-right: 40px;
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  }
+
+/* Clearfix (clear floats) */
+.row1::after {
+  content: "";
+  display: table;
+  clear: both;
+  align-content: center;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  }
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+  align-content: center;
+  margin-bottom: 70px;
+}
+
+h1 {
+	color: white;
+	font-family: arial;
+  text-decoration: none;
+ }
+
+.navbar {
+  overflow: hidden;
+  background-color:transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: arial;
+  z-index: 1;
+  width: 100%;
+  display: inline-block;
+  height: auto;
+}
+
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  min-width: 250px;
+}
+
+.navbar a:hover {
+  background-color: #73cc98;
+  color: white;
+}
+
+.navbar a.active {
+  background-color: red;
+  color: white;
+}
+
+ul {
+  margin-left: 230px;
+  margin-right: 230px;
+  margin-top: 80px;
+}
+
+ul li{
+  list-style-type: none;
+  color: white;
+  font-family: arial;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  background-color: #73cc98;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 280px;
+ }
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 4px 4px 0 rgb(38, 153, 143);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  height: 100px;
+  text-decoration: none;
+}
+
+.container h1{
+  font-family: arial;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.tab {
+  position: relative;
+  width: 100%;
+  width: 260px;
+  height: 100px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width: 260px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.tab .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 46.5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  height: 370px;
+}
+
+.tab:hover .image {
+  opacity: 0.3;
+}
+
+.tab:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  padding: 0px 0px;
+  position: center;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #1c9156;
+  border: none;
+  font-family: arial;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  position: fixed;
+  bottom: 330px;
+  right: 250px;
+  cursor: pointer;
+  width:200px;
+  height:auto;
+}
+
+/* .button:hover {opacity: 1} */
+
+.footer {
+  background-color: #333;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  font-family: arial;
+  width: 100%;
+  display: inline-block;
+}
